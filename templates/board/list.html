@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}">
 </head>
+<h1>리스트</h1>
 <body>
     {% if request.user.is_authenticated %}
     {{ request.user }} <br/><br/>
