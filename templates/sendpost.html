@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/test/getpost" method="post">
+    {% csrf_token %}
+    <input name="var1">
+    <input name="var2">
+    <button>전송</button>
+</form>
+
+{{ key1 }}
+
+</body>
+</html>
